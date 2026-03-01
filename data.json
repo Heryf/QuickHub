@@ -7,6 +7,94 @@
       "desc": "最强 AI 对话",
       "tag": "ai",
       "icon": "🤖"
+    },
+    {
+      "id": 2,
+      "name": "文心一言",
+      "url": "https://yiyan.baidu.com",
+      "desc": "百度 AI",
+      "tag": "ai",
+      "icon": "💬"
+    },
+    {
+      "id": 3,
+      "name": "Kimi",
+      "url": "https://kimi.moonshot.cn",
+      "desc": "月之暗面",
+      "tag": "ai",
+      "icon": "🌙"
+    },
+    {
+      "id": 4,
+      "name": "通义千问",
+      "url": "https://tongyi.aliyun.com",
+      "desc": "阿里 AI",
+      "tag": "ai",
+      "icon": "🔮"
+    },
+    {
+      "id": 5,
+      "name": "微信",
+      "url": "https://weixin.qq.com",
+      "desc": "下载微信",
+      "tag": "soft",
+      "icon": "💚"
+    },
+    {
+      "id": 6,
+      "name": "Chrome",
+      "url": "https://www.google.cn/chrome",
+      "desc": "浏览器",
+      "tag": "soft",
+      "icon": "🌐"
+    },
+    {
+      "id": 7,
+      "name": "WPS",
+      "url": "https://www.wps.cn",
+      "desc": "办公软件",
+      "tag": "soft",
+      "icon": "📝"
+    },
+    {
+      "id": 8,
+      "name": "钉钉",
+      "url": "https://www.dingtalk.com",
+      "desc": "办公沟通",
+      "tag": "work",
+      "icon": "📌"
+    },
+    {
+      "id": 9,
+      "name": "腾讯会议",
+      "url": "https://meeting.tencent.com",
+      "desc": "视频会议",
+      "tag": "work",
+      "icon": "📹"
+    },
+    {
+      "id": 10,
+      "name": "B 站",
+      "url": "https://www.bilibili.com",
+      "desc": "视频网站",
+      "tag": "life",
+      "icon": "📺"
+    },
+    {
+      "id": 11,
+      "name": "抖音",
+      "url": "https://www.douyin.com",
+      "desc": "短视频",
+      "tag": "life",
+      "icon": "🎵"
+    },
+    {
+      "id": 12,
+      "name": "知乎",
+      "url": "https://www.zhihu.com",
+      "desc": "问答社区",
+      "tag": "life",
+      "icon": "📖"
     }
   ],
   "tags": {
@@ -17,8 +105,16 @@
     "soft": {
       "name": "💻 常用软件",
       "color": "tag-soft"
+    },
+    "work": {
+      "name": "💼 办公效率",
+      "color": "tag-work"
+    },
+    "life": {
+      "name": "🎨 生活娱乐",
+      "color": "tag-life"
     }
   },
-  "announce": "<p><strong>📢 欢迎来到 QuickHub</strong></p><p>这是一个简洁高效的导航站</p>",
-  "searchEngine": "bing"
+  "announce": "<p><strong>📢 欢迎来到 QuickHub</strong></p><p>这是一个简洁高效的导航站</p><p>⏰ 工作时间：周一至周五 9:00-18:00</p><p>📧 有问题请联系管理员</p>",
+  "searchEngine": "baidu"
 }
