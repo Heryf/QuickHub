@@ -95,6 +95,14 @@
       "desc": "问答社区",
       "tag": "life",
       "icon": "📖"
+    },
+    {
+      "id": 1772358861552,
+      "name": "github",
+      "url": "https://github.com/",
+      "desc": "",
+      "tag": "ai",
+      "icon": "🔗"
     }
   ],
   "tags": {
