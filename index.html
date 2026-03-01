@@ -722,7 +722,14 @@
                     <option value="shenma">神马</option>
                 </select>
             </div>
-            
+			
+            <!-- 在搜索引擎配置后面添加 -->
+			<div class="config-section">
+				<h4>数据导入</h4>
+				<input type="file" id="importFile" accept=".json" style="margin-bottom: 1rem;">
+				<button onclick="importData()" class="btn-secondary">导入数据</button>
+		</div>
+			
             <div class="btn-group">
                 <button class="btn-secondary" onclick="closeModal('configModal')">取消</button>
                 <button onclick="saveConfig()">保存配置</button>
@@ -1203,6 +1210,34 @@
             closeModal('configModal');
             alert('配置保存成功！');
         }
+		
+			// 添加新函数
+			function importData() {
+				const fileInput = document.getElementById('importFile');
+				const file = fileInput.files[0];
+				if (!file) {
+					alert('请选择文件');
+					return;
+				}
+    
+				const reader = new FileReader();
+				reader.onload = function(e) {
+					try {
+						const importedData = JSON.parse(e.target.result);
+						if (confirm('确定要导入数据吗？这将覆盖当前所有数据。')) {
+							data = importedData;
+							localStorage.setItem('qh_data', JSON.stringify(data));
+							saveToGitHub();
+							render();
+							alert('导入成功！');
+							closeModal('configModal');
+						}
+					} catch (error) {
+						alert('文件格式错误：' + error.message);
+					}
+				};
+				reader.readAsText(file);
+			}
 
         function addItem() {
             editingId = null;
