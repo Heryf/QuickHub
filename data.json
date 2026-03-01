@@ -7,14 +7,6 @@
       "desc": "最强 AI 对话",
       "tag": "ai",
       "icon": "🤖"
-    },
-    {
-      "id": 2,
-      "name": "文心一言",
-      "url": "https://yiyan.baidu.com",
-      "desc": "百度 AI",
-      "tag": "ai",
-      "icon": "💬"
     }
   ],
   "tags": {
